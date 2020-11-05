@@ -1,0 +1,99 @@
+I"<p><br />
+Today we’re unveiling M3O as “open to the world”. Head to the <a href="https://m3o.com">homepage</a> and get started immediately. 
+M3O is a fully managed cloud platform for microservices development. It’s built based on the 
+popular open source project <a href="https://micro.mu"><strong>Micro</strong></a> and focuses on developer productivity for backend service development. To read about 
+the related Micro 3.0 release head to the <a href="https://micro.mu/blog/2020-11-05-micro-v3-aka-m3o">open source blog post</a>.</p>
+
+<p>Back in May we <a href="/2020/07/30/m3o-a-cloud-native-platform-built-for-developers.html">announced</a> our goals and efforts towards building a 
+shared platform in the cloud for developers to create services without the hassle of managing infrastructure. Since then we’ve been testing 
+this with a small group of paying customers (who we’re grateful to) and iterating based on the feedback. Today we’re happy to say M3O is 
+in a place where we feel excited and confident to offer it everyone.</p>
+
+<p>No more dealing with cloud infrastructure, no more complex dashboards from AWS and others. A purely CLI driven experience and a development model 
+baked in for writing microservices. Not only that but the feature set includes the following based on running Micro as a Service.</p>
+
+<h3 id="features">Features</h3>
+
+<p>Here’s a few things to highlight:</p>
+
+<ul>
+  <li><strong>Microservices development</strong> using gRPC and protobuf code gen</li>
+  <li><strong>Service runtime</strong> and lifecycle management</li>
+  <li><strong>Source to running</strong> builds without need for CI/CD</li>
+  <li><strong>Authentication and authorization</strong> for access control and user management</li>
+  <li><strong>Dynamic configuration</strong> and secrets management</li>
+  <li><strong>PubSub messaging</strong> and event streaming</li>
+  <li><strong>Service discovery</strong> and secure networking</li>
+  <li><strong>Key-value storage</strong> and persistent CRUD</li>
+  <li><strong>Automatic HTTP routing</strong> with path based resolution</li>
+  <li><strong>Identity aware proxy</strong> for remote access and gRPC-web apps</li>
+  <li><strong>Public API gateway</strong> and TLS support by default</li>
+  <li><strong>Public and private repos</strong> support including  github, gitlab and bitbucket</li>
+</ul>
+
+<h3 id="tiers">Tiers</h3>
+
+<p>M3O is launching with a simple 3 tier pricing plan; <strong>Dev</strong>, <strong>Platform</strong> and <strong>Cloud</strong>.</p>
+
+<ul>
+  <li>
+    <p><strong>Dev</strong> is a free tier for you to get started on. We know the hassles of getting stuff up and running and the costs of Cloud 
+(even with credits) so we’re making it super simple for developers to get started fast. This is built for small projects and individual devs.</p>
+  </li>
+  <li>
+    <p><strong>Platform</strong> is a paid secure, scalable and supported tier that includes 2x the resource limits of Dev and gives you confidence in a 
+platform team managing the infrastructure. When you’re done hacking on Dev, switch to the Platform environment and run your 
+production services knowing we’ve got your back.</p>
+  </li>
+  <li>
+    <p><strong>Cloud</strong> is for larger scale teams who want isolated environments in the cloud, whether its self-hosted or fully managed. We’ll give 
+you the Platform experience but tailored for your needs. While Dev and Platform are multi-tenant shared environments, Cloud is totally 
+separate so you know you’re the single tenant and owner of those resources.</p>
+  </li>
+</ul>
+
+<h3 id="pricing">Pricing</h3>
+
+<p>Unlike cloud compute providers who feel the need to charge per the penny and force to you into using pricing calculators to figure out the 
+costs, we’re using a simply flat subscription pricing model on a per user basis. Our goal is to focus on abstracting away the details 
+of infrastructure including the pricing and let you as a developer just focus on writing code.</p>
+
+<p>That’s why the platform is priced at $35/user/month with unlimited collaborators. Over time we’ll include addition value add services 
+and features that you can tag on in a predictable manner but we never want to show you a fractional cost or making it difficult for 
+you to understand what you’re paying.</p>
+
+<p>If you’re using the Dev tier, its totally free of charge. We’re using fair usage limits to make sure everyone gets their fair go of 
+things and capping it at 1 core and 1gb of memory for all the services in your namespace. You can cut that up however you like. In the 
+case of the Platform tier we’re giving you 2x that with 2 cores and 2Gb of memory. In the future we’ll make this configurable so you 
+can top up as you need.</p>
+
+<h3 id="goals">Goals</h3>
+
+<p>Our goal is not to replace cloud compute or large scale infrastructure providers. This isn’t something we can really do and infact they 
+do such a good job of it we shouldn’t have to. What we’ve however noticed is the developer experience is really lagging behind in 2020. 
+Where Heroku took too much away, AWS is giving too much back. Especially to the developer.</p>
+
+<p>Our primary goal is to abstract away the complexity of the cloud and provide a new development model that focuses on distributed and 
+multi-service development on top. Based on our experiences we think to do all that you really have to be focused on the developer UX 
+for microservices and that requires a number of primitives listed in the feature set above.</p>
+
+<p>Over time though we know some of those abstractions and the infrastructure components will require direct access and we want to promote 
+the use of managed services in the various cloud providers as appropriate. So we’ll instill a pluggable model and drop in replacements 
+for anything we offer.</p>
+
+<p>Overall we think developers are really in need of a new cloud platform, one that focuses entirely on their needs rather than overloading 
+them with the need for infrastructure and operational management.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>We’re excited to unveil M3O to the world and hopefully you’re interested in trying it out too. Just head on over to the <a href="https://m3o.com">website</a> 
+to get started or join us on <a href="https://slack.m3o.com">slack</a> and <a href="https://discord.gg/hbmJEct">discord</a>. If you’ve felt the pains of managing 
+cloud infrastructure and want a simpler experience that just lets you focus on microservices development then we’re the 
+new cloud provider built just for you.</p>
+
+<p>Cheers</p>
+
+<p>Asim Aslam
+<br />
+Founder &amp; CEO Micro</p>
+:ET

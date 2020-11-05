@@ -84,10 +84,10 @@ I went to Hacker News once more, only this time, things went a bit differently
 [https://news.ycombinator.com/item?id=11327679](https://news.ycombinator.com/item?id=11327679).
 
 Hacker News responded positively and Micro shot to the top of the front page. Here's the original blog post 
-for those interested in reading it [https://m3o.com/blog/2016/03/20/micro.html](https://m3o.com/blog/2016/03/20/micro.html).
+for those interested in reading it [{{ site.baseurl }}/2016/03/20/micro.html]({{ site.baseurl }}/2016/03/20/micro.html).
 
 <center>
-<a href="https://m3o.com/blog/2016/03/20/micro.html">
+<a href="{{ site.baseurl }}/2016/03/20/micro.html">
   <img src="{{ site.baseurl }}/assets/images/micro-post.png" style="height: auto; width: 80%; margin: 0" />
 </a>
 </center>
