@@ -1,7 +1,7 @@
 ---
 layout:	post
 title:	"M3O Platform is now open to the world!"
-date:	2020-12-03 10:00:00
+date:	2020-11-05 10:00:00
 ---
 <br>
 Today we're unveiling M3O as "open to the world". Head to the [homepage](https://m3o.com) and get started immediately. 
