@@ -77,7 +77,7 @@ powerful Micro and M3O are.
 
 ## Building a backend
 
-You're going to be writing and deployment APIs in minutes rather than hours! No more dealing with infrastructure on the 
+You're going to be writing and deploying APIs in minutes rather than hours! No more dealing with infrastructure on the 
 backend, just as Netlify empowered devs on the frontend, we're doing the same for a new generation of developers on the backend.
 
 Let's walk you through it.
