@@ -82,7 +82,7 @@ backend, just as Netlify empowered devs on the frontend, we're doing the same fo
 
 Let's walk you through it.
 
-### Signup to M3O Dev
+### Signup to M3O
 
 First you start by signing up to M3O and registering for a free account in our Dev environment.
 
