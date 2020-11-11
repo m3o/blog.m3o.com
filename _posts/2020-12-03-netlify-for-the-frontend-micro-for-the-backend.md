@@ -141,7 +141,7 @@ On the open source side, Micro maintains some reusable example services we can a
 You can check them out at [github.com/micro/services](https://github.com/micro/services). Let's bootstrap the blog 
 using a couple of them.
 
-Because Micro is all about microservies development, we've decomposed the blog API into posts, comments and tags. 
+Because Micro is all about microservices development, we've decomposed the blog API into posts, comments and tags. 
 Right now we'll focus on posts and tags. You can find the code in [https://github.com/micro/services/tree/master/blog](https://github.com/micro/services/tree/master/blog).
 
 Deploying these is super simple.
