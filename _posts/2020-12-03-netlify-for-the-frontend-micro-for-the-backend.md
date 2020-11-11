@@ -82,3 +82,75 @@ backend, just as Netlify empowered devs on the frontend, we're doing the same fo
 
 Let's walk you through it.
 
+### Register on Micro's free Dev tier
+
+If you don't have a Micro account yet, you can get one by first installing Micro:
+
+```sh
+# MacOS
+curl -fsSL https://raw.githubusercontent.com/micro/micro/master/scripts/install.sh | /bin/bash
+
+# Linux
+wget -q  https://raw.githubusercontent.com/micro/micro/master/scripts/install.sh -O - | /bin/bash
+
+# Windows
+powershell -Command "iwr -useb https://raw.githubusercontent.com/micro/micro/master/scripts/install.ps1 | iex"
+```
+
+Then registering with in our free "dev" tier
+
+```sh
+micro env set dev
+micro signup
+```
+
+### Deploying a dynamic blog backend
+
+Fortunately, we have a few prewritten services to bootstrap a dynamic blog: [https://github.com/micro/services/tree/master/blog](https://github.com/micro/services/tree/master/blog).
+Deploying these is very easy:
+
+```sh
+micro run github.com/micro/services/blogs/tags
+micro run github.com/micro/services/blogs/posts
+```
+
+That's all! `micro status` should tell if they are running successfully. `micro logs tags` and `micro logs posts` can be also consulted to see if everything is all right.
+
+Now, after those services are already running, the services and their endpoints are callable from the CLI:
+
+Save a post:
+
+```sh
+micro posts save --id=1 --title="Awesome post title" --content="Even more awesome post content"
+```
+
+List posts:
+
+```sh
+micro posts query
+```
+
+The same calls can be made over the API too, just have to know your namespace:
+
+```sh
+$ micro user namespace
+# below namespace is just an example, please take the actual output
+your-micro- namespace
+```
+
+```sh
+$ curl -H "Micro-Namespace: your-micro-namespace" https://api.m3o.dev/posts/query
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Awesome post title",
+      "slug": "awesome-post-title",
+      "content": "Even more awesome post content"
+    }
+}
+```
+
+Nice! So our backend is practically ready to be used, now let's deploy the frontend to Netlify
+
+## Deploying the frontend
