@@ -82,46 +82,90 @@ backend, just as Netlify empowered devs on the frontend, we're doing the same fo
 
 Let's walk you through it.
 
-### Register on Micro's free Dev tier
+### Signup to M3O Dev
 
-If you don't have a Micro account yet, you can get one by first installing Micro:
+First you start by signing up to M3O and registering for a free account in our Dev environment.
+
+Start by installing micro
 
 ```sh
-# MacOS
-curl -fsSL https://raw.githubusercontent.com/micro/micro/master/scripts/install.sh | /bin/bash
-
-# Linux
-wget -q  https://raw.githubusercontent.com/micro/micro/master/scripts/install.sh -O - | /bin/bash
-
-# Windows
-powershell -Command "iwr -useb https://raw.githubusercontent.com/micro/micro/master/scripts/install.ps1 | iex"
+curl -fsSL https://install.m3o.com/micro | /bin/bash
 ```
 
-Then registering with in our free "dev" tier
+For those wary of curl into bash, you can view it first [https://install.m3o.com/micro](https://install.m3o.com/micro).
+
+
+Signup is purely CLI based for now so just issue the following command and follow the steps
 
 ```sh
-micro env set dev
 micro signup
 ```
 
-### Deploying a dynamic blog backend
+Once you're done you should have an account on M3O and be automatically logged in.
 
-Fortunately, we have a few prewritten services to bootstrap a dynamic blog: [https://github.com/micro/services/tree/master/blog](https://github.com/micro/services/tree/master/blog).
-Deploying these is very easy:
+### Run Helloworld
+
+Validate that by running helloworld.
 
 ```sh
-micro run github.com/micro/services/blogs/tags
-micro run github.com/micro/services/blogs/posts
+micro run github.com/micro/services/helloworld
 ```
 
-That's all! `micro status` should tell if they are running successfully. `micro logs tags` and `micro logs posts` can be also consulted to see if everything is all right.
-
-Now, after those services are already running, the services and their endpoints are callable from the CLI:
-
-Save a post:
+Check it's running and try call it via the CLI.
 
 ```sh
-micro posts save --id=1 --title="Awesome post title" --content="Even more awesome post content"
+# check the status
+micro status
+
+# call helloworld
+micro call helloworld --name="Alice"
+```
+
+OK now we get to the more interesting part. Call it via the HTTP API that's dynamically generated for you.
+
+```sh
+# get your namespace
+NAMESPACE=$(micro user namespace)
+
+# curl your unique url
+curl "https://$NAMESPACE.m3o.com/helloworld?name=Alice"
+```
+
+If alls good, we can move on to running something a bit more interesting.
+
+### Deploying a dynamic blog backend
+
+We're going to deploy a headless CMS, or better known as a Blog API.
+
+On the open source side, Micro maintains some reusable example services we can all play with and contribute back to. 
+You can check them out at [github.com/micro/services](https://github.com/micro/services). Let's bootstrap the blog 
+using a couple of them.
+
+Because Micro is all about microservies development, we've decomposed the blog API into posts, comments and tags. 
+Right now we'll focus on posts and tags. You can find the code in [https://github.com/micro/services/tree/master/blog](https://github.com/micro/services/tree/master/blog).
+
+Deploying these is super simple.
+
+```sh
+# run the posts service
+micro run github.com/micro/services/blogs/posts
+
+# run the tags service
+micro run github.com/micro/services/blogs/tags
+```
+
+Check they're running using `micro status`. You should see the status progress through starting, building and running. 
+If you want to see logs or anything related just do `micro logs posts` and the same for any other service by name.
+
+
+### Write some posts
+
+Once services are running they become immediately callable via the CLI as dynamic commands.
+
+Save a quick post:
+
+```sh
+micro posts save --id=1 --title="My first post" --content="This is pretty epic"
 ```
 
 List posts:
@@ -132,25 +176,58 @@ micro posts query
 
 The same calls can be made over the API too, just have to know your namespace:
 
-```sh
-$ micro user namespace
-# below namespace is just an example, please take the actual output
-your-micro- namespace
-```
+### Query using the API
+
+Now here's where it gets cool and more importantly what you'll be calling from your frontend apps 
+running on Netlify. First grab your namespace like earlier.
+
 
 ```sh
-$ curl -H "Micro-Namespace: your-micro-namespace" https://api.m3o.dev/posts/query
+$ micro user namespace
+random-example-namespace
+```
+
+Now just curl it like any other api
+
+```sh
+$ curl -H "Micro-Namespace: random-example-namespace" https://api.m3o.dev/posts/query
 {
   "posts": [
     {
       "id": "1",
-      "title": "Awesome post title",
-      "slug": "awesome-post-title",
-      "content": "Even more awesome post content"
+      "title": "My first post",
+      "slug": "my-first-post",
+      "content": "This is pretty epic"
     }
 }
 ```
 
-Nice! So our backend is practically ready to be used, now let's deploy the frontend to Netlify
+The generic `api.m3o.dev` url requires us to pass in our namespace so we query our own service but 
+every namespace also gets its own unique URL so you don't have to worry about this in your frontend 
+code. Just compose namespace + m3o.dev as `random-example-namespace.m3o.dev`.
 
-## Deploying the frontend
+```sh
+$ curl https://random-example-namespace.m3o.dev/posts/query
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "My first post",
+      "slug": "my-first-post",
+      "content": "This is pretty epic"
+    }
+}
+```
+
+That's it! We now have the backend for our frontend running on M3O.
+
+Let's deploy the sample frontend to Netlify just for kicks.
+
+## Deploying the frontend to Netlify
+
+The frontend is a simple angular app we've put together to validate the premise:
+
+**Netlify for the frontend, Micro for the backend**
+
+You can find the code in [github.com/m3o/blog-frontend](https://github.com/m3o/blog-frontend) but 
+we'll walk you through the install anyhow.
