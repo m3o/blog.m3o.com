@@ -176,7 +176,7 @@ micro posts query
 
 The same calls can be made over the API too, just have to know your namespace:
 
-### Query using the API
+### Use the API
 
 Now here's where it gets cool and more importantly what you'll be calling from your frontend apps 
 running on Netlify. First grab your namespace like earlier.
