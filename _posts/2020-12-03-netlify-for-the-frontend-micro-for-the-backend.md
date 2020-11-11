@@ -4,7 +4,7 @@ title:	"Netlify for the frontend, Micro for the backend"
 date:	2020-12-03 10:00:00
 ---
 <br>
-Today Netlify has emerged as the modern platform for rapidly building web applications without having to worry about anything beyond your code. We at Micro 
+Today Netlify has emerged as the modern platform for rapidly building web applications without having to worry about anything beyond your code. We at [Micro](https://m3o.com)
 are users of Netlify and have bought into this phenomenal experience. What's more Netlify has demonstrated to us a breakdown in the classic web architecture 
 stack which previously combined web and api concerns in a single place. As we moved through a tiered architecture frontend had not been given anything more 
 than hints on how to consume dynamic content from the backend. Today we're all calling this the [Jamstack](https://jamstack.org/). 
