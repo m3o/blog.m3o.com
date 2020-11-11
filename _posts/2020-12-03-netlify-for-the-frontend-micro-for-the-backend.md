@@ -23,16 +23,6 @@ The one question we've really been seeing a lot though is "What's Netlify for th
 Netlify are looking to where they can find and build these APIs. It seems even Netlify's current answer has been, "go host something on heroku". I think 
 in 2020 this just doesn't fly. If the frontend is being reimagined then the same has to happen on the backend to cater for that use.
 
-## API First
-
-<img src="https://dev-to-uploads.s3.amazonaws.com/i/0znow24kgpu2dp3zg60n.png" />
-
-We are seeing the emergence of APIs as the dominant form factor for cloud services, from AWS all the way through to Twilio and Stripe. What's even more 
-compelling is while this model has emerged in the past few years, we are only really just getting started. It's our belief that in a decade from now 
-some of the most important companies will be API first yet strangely there is no platform to caters to this form of development.
-
-Where is Netlify for the backend?
-
 ## Netlify for the Backend
 
 <img src="{{ site.baseurl }}/assets/images/netlify.png" />
@@ -43,9 +33,52 @@ and consuming APIs as microservices. What M3O brings to the table is Micro as a 
 in Go and gRPC on the backend, expose them dynamically via HTTP API to be consumed by the frontend. M3O looks to fill that gap in the market for frontend 
 devs. M3O is Netlify for the backend.
 
+## M3O Features
+
+As we mentioned, M3O is a fully managed [Micro](https://micro.mu) services platform. What does that mean? Micro provides the building blocks for 
+writing, running and consuming microservices. From source to running and beyond. M3O takes that and hosts it so you can just get on with writing 
+APIs without worrying about the underlying infrastructure.
+
+Here's a few of the key features and services:
+
+- **Microservices development** using [gRPC](https://grpc.io) and protobuf code generation
+- **Service runtime** and process lifecycle management
+- **Source to running** builds without need for CI/CD
+- **Authentication and authorization** for access control and user management
+- **Dynamic configuration** and secrets management
+- **PubSub messaging** and event streaming
+- **Service discovery** and secure networking
+- **Key-value storage** and persistent CRUD
+- **Automatic HTTP routing** with path based resolution
+- **Identity aware proxy** for remote access and gRPC-web apps
+- **Public API gateway** and TLS support by default
+- **Public and private repos** support including  github, gitlab and bitbucket
+
+M3O is a feature complete platform for microservices development from generating service templates on your local machine through to writing and running 
+it in the cloud all using the same Micro CLI experience. M3O exposes HTTPS urls for you dynamically by default. So every service automatically becomes 
+an API as soon as you deploy it.
+
 Where a new development model has emerged for the frontend, we think its dictating the "headless" paradigm shift for the backend and M3O wants to be there 
 to host all of those APIs as Micro services.
 
+## API First
+
+<img src="https://dev-to-uploads.s3.amazonaws.com/i/0znow24kgpu2dp3zg60n.png" />
+
+We are seeing the emergence of APIs as the dominant form factor for cloud services, from AWS all the way through to Twilio and Stripe. What's even more 
+compelling is while this model has emerged in the past few years, we are only really just getting started. It's our belief that in a decade from now 
+some of the most important companies will be API first yet strangely there is no platform to caters to this form of development.
+
+Twilio, Stripe and others have all had to build out the infrastructure for their API first approach. We think as many more companies go down this path 
+the tools must emerge to empower them, not just at the compute layer but by providing the higher level abstractions required. That's the goal of M3O.
+
 But don't just take our word for it. We're going to walk you through a demonstration of the value proposition so you can see for yourself just how 
-powerful Micro and M3O are. You're going to be writing and deployment APIs in minutes rather than hours! No more dealing with infrastructure on the 
+powerful Micro and M3O are. 
+
+## Building a backend
+
+You're going to be writing and deployment APIs in minutes rather than hours! No more dealing with infrastructure on the 
 backend, just as Netlify empowered devs on the frontend, we're doing the same for a new generation of developers on the backend.
+
+Let's walk you through it.
+
