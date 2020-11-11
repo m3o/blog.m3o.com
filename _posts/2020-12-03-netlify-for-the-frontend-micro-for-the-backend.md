@@ -158,7 +158,7 @@ Check they're running using `micro status`. You should see the status progress t
 If you want to see logs or anything related just do `micro logs posts` and the same for any other service by name.
 
 
-### Write some posts
+### Write a post on the CLI
 
 Once services are running they become immediately callable via the CLI as dynamic commands.
 
@@ -176,7 +176,7 @@ micro posts query
 
 The same calls can be made over the API too, just have to know your namespace:
 
-### Use the API
+### Call it via the HTTP API
 
 Now here's where it gets cool and more importantly what you'll be calling from your frontend apps 
 running on Netlify. First grab your namespace like earlier.
