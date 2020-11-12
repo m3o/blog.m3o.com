@@ -239,7 +239,9 @@ we'll walk you through the install now. The deploy settings for the site hosted 
 <img src="{{ site.baseurl }}/assets/images/deploysettings.png" style="width: 100%; height: auto;" />
 </center>
 
-You can copy the below settings for ease of use:
+<br>
+You can copy the below settings for ease of use. Where you see 'concert-celtic-uncover' replace it with your namespace from `micro user namespace` on the CLI. 
+We need this to know what backend API to call.
 
 ```
 Repository        github.com/m3o/blog-frontend
@@ -248,14 +250,16 @@ Build command     sed -i 's/micro/concert-celtic-uncover/g' ./src/environments/e
 Publish directory dist/blog-frontend
 ```
 
-As you can see, it's the original `m3o/blog-frontend` being deployed in the exaxmple, but in your case `m3o` will be replaced with your fork. This is because Netlify asks for the permissions to the repo.
+As you can see, it's the original `m3o/blog-frontend` being deployed in the example, but in your case `m3o` will be replaced with your fork. 
+This is because Netlify asks for the permissions to the repo.
 
 The build command is a bit involved, here is what it's doing:
 
 ```sh
-# replace the micro string with your namespace.
-# the namespace here is 'concert-celtic-uncover' but you can get your own one with 'micro user namespace'
-sed -i 's/micro/concert-celtic-uncover/g' ./src/environments/environment.prod.ts &&
+# Replace the micro namespace with your own
+namespace=$(micro user namespace)
+
+sed -i "s/micro/$namespace/g" ./src/environments/environment.prod.ts
 
 # It's an angular app, so we have to ng build
 ng build --prod
@@ -265,7 +269,8 @@ cp ./src/assets/_redirects ./dist/blog-frontend
 ```
 
 After that is done and it builds successfully, your web app should be live!
-Don't forget to add posts from your terminal:
+
+Don't forget to add posts from your terminal.
 
 ### Create a new post
 
@@ -275,4 +280,46 @@ micro posts save --id=1 --title="My first post" --content="This is pretty epic"
 
 # query posts
 micro posts query
+```
+
+Now hit the frontend on Netlify and check it out. You should see your post immediately show up.
+
+### What's the frontend doing
+
+The frontend we're running on Netlify is basically using Micro as the backend and M3O provides the hosted 
+APIs for your posts service. We're using the url `api.m3o.dev` and passing the namespace with the `Micro-Namespace` 
+header but you can equally use unique API urls that are `$namespace.m3o.dev`.
+
+Each service you deploy resolves to a path e.g the 'posts' service is api.m3o.dev/posts and their methods follow on from that so 
+`Posts.Query` on the backend is `api.m3o.dev/posts/query`. This provides automatic dynamic mapping of Go based gRPC 
+services on the backend to HTTP APIs for the frontend.
+
+Here's the example code in typescript we use to construct the calls
+
+```
+export class M3oService {
+  public address: string = environment.m3oAddress;
+  public namespace: string = environment.m3oNamespace;
+
+  constructor(private http: HttpClient) { }
+
+  get(service: string, endpoint: string, params: HttpParams): Promise<Object> {
+    return this.http.get(this.address + "/" + service + "/" + endpoint, {
+      headers: {
+        "Micro-Namespace": [this.namespace]
+      },
+      params: params,
+    }).toPromise()
+  }
+}
+```
+
+And here's us listing those posts on the frontend
+
+```
+  ngOnInit(): void {
+    this.m3o.get("posts", "query", null).then(v => {
+      this.posts = v["posts"]
+    })
+  }
 ```
