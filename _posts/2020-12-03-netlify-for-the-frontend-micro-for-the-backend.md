@@ -288,9 +288,11 @@ Here's what our demo looks like on [loving-goodall-44ee08.netlify.app](https://l
 
 <center>
   <a href="https://loving-goodall-44ee08.netlify.app/">
-    <img src="{{ site.baseurl }}/assets/images/frontend.png" style="width: 100%; height: auto;" />
+    <img src="{{ site.baseurl }}/assets/images/frontend.png" style="width: 100%; height: auto; border: 1px solid #ccc;" />
   </a>
 </center>
+
+<br>
 
 ### What's the frontend doing
 
