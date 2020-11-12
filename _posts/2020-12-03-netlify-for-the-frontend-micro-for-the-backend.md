@@ -241,14 +241,13 @@ The deploy settings for the site hosted under [https://loving-goodall-44ee08.net
 Or to be easier to copypaste:
 
 ```
-Repository        github.com/crufter/blog-frontend
+Repository        github.com/m3o/blog-frontend
 Base directory    Not set
 Build command     sed -i 's/micro/concert-celtic-uncover/g' ./src/environments/environment.prod.ts && ng build --prod && cp ./src/assets/_redirects ./dist/blog-frontend
 Publish directory dist/blog-frontend
 ```
 
-As you can see, it's a fork that is deployed. This is because Netlify asks for the permissions to the repo.
-So after you fork [github.com/m3o/blog-frontend](https://github.com/m3o/blog-frontend), use your fork to deploy on Netlify.
+As you can see, it's the original `m3o/blog-frontend` being deployed in the exaxmple, but in your case `m3o` will be replaced with your fork. This is because Netlify asks for the permissions to the repo.
 
 The build command is a bit involved, here is what it's doing:
 
