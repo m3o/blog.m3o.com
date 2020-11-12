@@ -80,7 +80,7 @@ powerful Micro and M3O are.
 You're going to be writing and deploying APIs in minutes rather than hours or days! No more dealing with infrastructure on the 
 backend, just as Netlify empowered devs on the frontend, we're doing the same for a new generation of developers on the backend.
 
-Let's walk you through it. We'll deploy an existing Micro blog services with this demo frontend on Netlify: [https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/). But first let's start with signup.
+Let's walk you through it. We'll deploy an existing Micro blog service with this demo frontend on Netlify: [https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/). But first let's start with signup.
 
 ### Signup to M3O
 
