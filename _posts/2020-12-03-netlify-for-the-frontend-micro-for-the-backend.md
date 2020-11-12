@@ -284,6 +284,10 @@ micro posts query
 
 Now hit the frontend on Netlify and check it out. You should see your post immediately show up.
 
+Here's what our demo looks like
+
+[PLACEHOLDER FOR SCREENSHOT]
+
 ### What's the frontend doing
 
 The frontend we're running on Netlify is basically using Micro as the backend and M3O provides the hosted 
