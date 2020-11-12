@@ -1,7 +1,7 @@
 ---
 layout:	post
 title:	"Netlify for the frontend, Micro for the backend"
-date:	2020-12-03 10:00:00
+date:	2020-11-12 10:00:00
 ---
 <br>
 Today Netlify has emerged as the modern platform for rapidly building web applications without having to worry about anything beyond your code. We at [Micro](https://m3o.com)
