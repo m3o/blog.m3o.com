@@ -328,7 +328,7 @@ And here's us listing those posts on the frontend
 
 It's really clear to us that there's this huge pain for people trying to consume APIs as we move into this new rearchitected world. 
 Too often people are asking "Where do I write or host my APIs", they are asking **Where's the Netlify for the backend**. We think 
-M3O and Micro are that solution. 
+[M3O](https://m3o.com) and [Micro](https://micro.mu) are that solution. 
 
 It's not enough to just consume existing APIs in the ecosystem, you want to build your own, but 
 you want to do it without having to standup layers of infrastructure on AWS or be beholden to the legacy players like Heroku or 
@@ -337,3 +337,5 @@ other providers who don't get that you want the same Netlify like experience on 
 Hopefully you're feeling like this makes sense and if you do please try out [M3O](https://m3o.com) and come join the [Slack](https://slack.m3o.com) 
 to chat with us. Write, run and consume all free, for personal use, with friends or your team. Hack on side projects, build APIs 
 to scale and either use it as the backend for your frontend or build the next Twilio or Stripe, all on M3O with Micro.
+
+Signup to [M3O](https://m3o.com) right now.
