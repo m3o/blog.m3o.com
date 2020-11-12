@@ -80,7 +80,7 @@ powerful Micro and M3O are.
 You're going to be writing and deployment APIs in minutes rather than hours! No more dealing with infrastructure on the 
 backend, just as Netlify empowered devs on the frontend, we're doing the same for a new generation of developers on the backend.
 
-Let's walk you through it.
+Let's walk you through it. We will deploy existing Micro blog services with this toy frontend on Netlify: [https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/).
 
 ### Register on Micro's free Dev tier
 
@@ -154,3 +154,5 @@ $ curl -H "Micro-Namespace: your-micro-namespace" https://api.m3o.dev/posts/quer
 Nice! So our backend is practically ready to be used, now let's deploy the frontend to Netlify
 
 ## Deploying the frontend
+
+Let's deploy this toy frontend for our blog: [https://github.com/micro/dev/tree/master/blog/frontend](https://github.com/micro/dev/tree/master/blog/frontend)
