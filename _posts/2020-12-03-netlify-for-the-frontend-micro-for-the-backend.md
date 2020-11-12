@@ -284,10 +284,12 @@ micro posts query
 
 Now hit the frontend on Netlify and check it out. You should see your post immediately show up.
 
-Here's what our demo looks like.
+Here's what our demo looks like on [loving-goodall-44ee08.netlify.app](https://loving-goodall-44ee08.netlify.app/).
 
 <center>
-<img src="{{ site.baseurl }}/assets/images/frontend.png" style="width: 100%; height: auto;" />
+  <a href="https://loving-goodall-44ee08.netlify.app/">
+    <img src="{{ site.baseurl }}/assets/images/frontend.png" style="width: 100%; height: auto;" />
+  </a>
 </center>
 
 ### What's the frontend doing
