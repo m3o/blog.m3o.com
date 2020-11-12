@@ -80,7 +80,7 @@ powerful Micro and M3O are.
 You're going to be writing and deploying APIs in minutes rather than hours or days! No more dealing with infrastructure on the 
 backend, just as Netlify empowered devs on the frontend, we're doing the same for a new generation of developers on the backend.
 
-Let's walk you through it. We will deploy existing Micro blog services with this toy frontend on Netlify: [https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/).
+Let's walk you through it. We'll deploy an existing Micro blog service with this demo frontend on Netlify: [https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/). But first let's start with signup.
 
 ### Signup to M3O
 
@@ -229,16 +229,17 @@ The frontend is a simple angular app we've put together to validate the premise:
 
 **Netlify for the frontend, Micro for the backend**
 
-## Deploying the frontend
-
 You can find the code in [github.com/m3o/blog-frontend](https://github.com/m3o/blog-frontend) but 
-we'll walk you through the install now.
+we'll walk you through the install now. The deploy settings for the site hosted under 
+[loving-goodall-44ee08.netlify.app](https://loving-goodall-44ee08.netlify.app/) are as follows:
 
-The deploy settings for the site hosted under [https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/) are the following:
+### Build settings
 
-<img src="{{ site.baseurl }}/assets/images/deploysettings.png" />
+<center>
+<img src="{{ site.baseurl }}/assets/images/deploysettings.png" style="width: 100%; height: auto;" />
+</center>
 
-Or to be easier to copypaste:
+You can copy the below settings for ease of use:
 
 ```
 Repository        github.com/m3o/blog-frontend
@@ -265,6 +266,8 @@ cp ./src/assets/_redirects ./dist/blog-frontend
 
 After that is done and it builds successfully, your web app should be live!
 Don't forget to add posts from your terminal:
+
+### Create a new post
 
 ```sh
 # Add a post
