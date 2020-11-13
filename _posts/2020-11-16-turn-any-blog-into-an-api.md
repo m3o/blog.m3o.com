@@ -7,17 +7,34 @@ date:	2020-11-16 10:00:00
 Last time we talked to you about how we believe Micro is [Netlify for the backend]({{ site.baseurl }}/2020/11/12/netlify-for-the-frontend-micro-for-the-backend.html). 
 We got a very strong positive reaction to that, filling a pain point it looks like many people had. In that post we used headless cms aka blog posts 
 as an example of the API you'd build on the backend to be consumed by a frontend. Today we're going to take it a step further.
+We're going to turn any blog or RSS feed into an API.
 
 An API on its own isn't enough. There's no content. You have to populate it yourself. So what if we made it just a little bit easier. How about we help
- you turn any blog, any content with an rss feed into an easy to consume API with just a handful of commands. Exciting right, let's get to it.
+ you turn any blog, any content with an rss feed into an easy to consume API with just a handful of commands. That's the power of Micro. 
+Exciting right, let's get to it.
+
+## Content in 2020
+
+For the most part blogging platforms haven't really evolved. There's still wordpress but interestingly everthings a bit of a silo or you have to 
+run something yourself, we use a bit of jekyll + markdown, etc and that works but it's not very developer friendly. That's really led to firstly 
+a bifurcation in adoption of tools and how content is stuck in walled gardens (another story for another day) and why we're seeing an explosion 
+in headless CMS.
+
+People want to write content and get paid. Most of those places don't really have APIs but do have RSS feeds. Developers want to consume and 
+use this content, quite honestly it goes beyond developers. Content is king and it's used for all sorts of sentiment analysis and other 
+market research. It's also actually reblogged, retweeted, and put in lots of different places. It would be really great if there was a much 
+simpler way to go about providing APIs for all this content out there.
+
+So let's do it. Micro is going to turn any blog or RSS feed into an API so it can be consumed from anywhere in any which way. And the key point 
+here, it's all hosted for you, without having to think about doing that yourself.
 
 ## Deploying the blog backend
 
-If you weren't around for the other post, we'll help you deploy the existing posts api.
+If you weren't around for the other post, we'll help you deploy the existing posts api and related services.
 
 ### Signup to M3O
 
-Start by installing micro if you haven't already
+You'll need to install micro and signup to M3O for this.
 
 ```sh
 curl -fsSL https://install.m3o.com/micro | /bin/bash
@@ -128,9 +145,8 @@ $ micro posts query
 
 ### Your posts as an API
 
-And just like we did last time, here's how to directly query your posts via an api
-
-Get your namespace using the command `micro user namespace` and compose the url as $namespace.m3o.dev/posts
+And just like we did last time, here's how to directly query your posts via an api .Get your namespace using the command 
+`micro user namespace` and compose the url as `$namespace.m3o.dev/posts`.
 
 ```sh
 # get your namespace
