@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	"Turn any blog into an API"
+title:	"Turn any blog or RSS feed into an API"
 date:	2020-11-16 10:00:00
 ---
 <br>
