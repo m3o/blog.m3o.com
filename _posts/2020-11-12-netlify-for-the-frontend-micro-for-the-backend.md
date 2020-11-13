@@ -148,10 +148,10 @@ Deploying these is super simple.
 
 ```sh
 # run the posts service
-micro run github.com/micro/services/blogs/posts
+micro run github.com/micro/services/blog/posts
 
 # run the tags service
-micro run github.com/micro/services/blogs/tags
+micro run github.com/micro/services/blog/tags
 ```
 
 Check they're running using `micro status`. You should see the status progress through starting, building and running. 
