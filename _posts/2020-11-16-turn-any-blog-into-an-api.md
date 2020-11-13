@@ -13,12 +13,21 @@ An API on its own isn't enough. There's no content. You have to populate it your
  you turn any blog, any content with an rss feed into an easy to consume API with just a handful of commands. That's the power of Micro. 
 Exciting right, let's get to it.
 
+## Things to know before we start
+
+Before we start, just a little housekeeping. Here's the tools we provide and are making use of.
+
+- [Micro](https://micro.mu) - is an open source framework for microservices development
+- [M3O](https://m3o.com) - is a hosted platform for backend API development powered by Micro
+
+These two things are fairly important to know before starting. Ok back to it.
+
 ## Content in 2020
 
-For the most part blogging platforms haven't really evolved. There's still wordpress but interestingly everthings a bit of a silo or you have to 
-run something yourself, we use a bit of jekyll + markdown, etc and that works but it's not very developer friendly. That's really led to firstly 
-a bifurcation in adoption of tools and how content is stuck in walled gardens (another story for another day) and why we're seeing an explosion 
-in headless CMS.
+For the most part blogging platforms haven't really evolved. There's still wordpress but interestingly everythings a bit of a silo or you have to 
+run something yourself, we use a bit of jekyll + markdown, etc and that works but it's not very developer friendly (from an API standpoint). 
+That's really led to firstly a bifurcation in adoption of tools and how content is stuck in walled gardens (another story for another day) and 
+why we're seeing an explosion in headless CMS.
 
 People want to write content and get paid. Most of those places don't really have APIs but do have RSS feeds. Developers want to consume and 
 use this content, quite honestly it goes beyond developers. Content is king and it's used for all sorts of sentiment analysis and other 
@@ -156,4 +165,14 @@ $ namespace=$(micro user namespace)
 $ curl https://$namespace.m3o.dev/posts/query
 ```
 
-We have just turned your blog or RSS feed into a http API!
+And hey presto! Just like that we have turned your blog or RSS feed into a http API!
+
+## The value proposition
+
+What is the value of turning any content into an API? The world is moving towards being entirely driven by technology. It's not enough that 
+we be able to consume through the web, we're now moving to mobile, voice and other platforms. APIs will power the world and to really 
+have full opportunity to realise that we have to get this content out of silos and into a consumable format, that being http APIs.
+
+Companies like Stripe, Twilio, Sendgrid and others have been API-ifying (yea I said) payments, communication and email but content 
+is still stuck in the dark ages. We think the best way to make it happen is by putting power into the hands of those actually creating 
+the content or those who really want to program against it. Hopefully this serves as a nice example of how to do that with Micro on M3O.
