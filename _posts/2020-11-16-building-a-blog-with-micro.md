@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Janos Dobronszki
-title: Building a Blog using microservices with Micro in Go
+title: Building a blog with Micro in Go
 date:   2020-11-16 10:00:00
 ---
 
