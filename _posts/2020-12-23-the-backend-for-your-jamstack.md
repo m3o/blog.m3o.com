@@ -87,5 +87,5 @@ All the services running can be called from Javascript easily (currently only a 
 <center>
   <img src="{{ site.baseurl }}/assets/images/microjs.png" style="width: 90%; height; auto;" />
 </center>
-
+<br>
 Micro.js handles authentication (a popup appears with a login or register options), so even endpoints requiring authentication or authorization can be called.
