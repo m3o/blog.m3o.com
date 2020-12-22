@@ -88,4 +88,8 @@ All the services running can be called from Javascript easily (currently only a 
   <img src="{{ site.baseurl }}/assets/images/microjs.png" style="width: 90%; height; auto;" />
 </center>
 <br>
+
 Micro.js handles authentication (a popup appears with a login or register options), so even endpoints requiring authentication or authorization can be called.
+Micro.js, combined with a lighweight templating language can be a perfect tool to add dynamic functionality to static pages by running the backend on Micro and calling those services with Micro.js.
+
+For those interested in a typescript implementation of login, signup and token refreshing, the [relevant web dashboard code](https://github.com/micro/web/blob/main/src/app/user.service.ts) can be useful.
