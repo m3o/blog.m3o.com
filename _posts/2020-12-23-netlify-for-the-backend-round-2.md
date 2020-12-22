@@ -41,7 +41,7 @@ It's now our goal to facilitate this with a single unified platform and reusable
 ## Introducing Micro Services
 
 Today we're unveiling [**Micro Services**](https://github.com/micro/services), a set of reusable building block services which can be used on the Micro Platform 
-whether you're self hosting the open source project or using our managed platform [M3O](https://m3o.com).
+whether you're self hosting the [open source](https://github.com/micro/micro) project or using our managed platform [M3O](https://m3o.com).
 
 Browse directly to [github.com/micro/services](https://github.com/micro/services) if you want to read through the code or kick the tyres locally.
 
