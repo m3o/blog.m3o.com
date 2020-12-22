@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	"Netlify for the Backend - Round 2: Reusable Micro Services"
+title:	"The backend for your jamstack"
 date:	2020-12-23 10:00:00
 ---
 <br>
@@ -9,6 +9,10 @@ Last month we talked about a new architecture pattern, <a href="{{ site.baseurl 
 Netlify, while largely agnostic of framework usage, has promoted decomposition of the traditional stack to something more driven by microservices and APIs. 
 [Micro](https://m3o.com) has long been an advocate for that, both as an [open source](https://github.com/micro/micro) project and now as a hosted platform called 
 [M3O]({{ site.baseurl }}/2020/11/05/m3o-open-to-the-world.html).
+
+## Get Started
+
+If you want to skip right to getting started head to the [m3o.com/signup](https://m3o.com/signup). 
 
 ## Evolution of the Backend
 
