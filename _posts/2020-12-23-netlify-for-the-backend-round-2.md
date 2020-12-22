@@ -34,5 +34,18 @@ As you can see in this image and probably from common experience, most businesse
 way up. It's only when we get to the business specific requirements that we need our own services to handle that logic.
 
 It's insane that most of us continue to build the same systems on the backend over and over rather than reusing and building on the foundations of each others 
-work. GitHub enabled this for open source at an accelerated pace but we've yet to see the same emerge for business logic and services.
+work. GitHub enabled this for open source at an accelerated pace but we've yet to see the same emerge for business logic, services and APIs.
+
+It's now our goal to facilitate this with a single unified platform and reusable services.
+
+## Introducing Micro Services
+
+Today we're unveiling [**Micro Services**](https://github.com/micro/services), a set of reusable building block services which can be used on the Micro Platform 
+whether you're self hosting the open source project or using our managed platform [M3O](https://m3o.com).
+
+Browse directly to [github.com/micro/services](https://github.com/micro/services) if you want to read through the code or kick the tyres locally.
+
+<center>
+  <img src="{{ site.baseurl }}/assets/images/micro-services.png" style="width: 100%; height: auto;" />
+</center>
 
