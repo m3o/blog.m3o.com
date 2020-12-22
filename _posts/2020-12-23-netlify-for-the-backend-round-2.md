@@ -49,3 +49,19 @@ Browse directly to [github.com/micro/services](https://github.com/micro/services
   <img src="{{ site.baseurl }}/assets/images/micro-services.png" style="width: 100%; height: auto;" />
 </center>
 
+<br>
+
+### What's Included?
+
+We're including 10 services from the get-go.
+
+- Helloworld
+- Chat
+- Posts
+- Comments
+- Tags
+- Feeds
+- Location
+- Messages
+- Notes
+- Users
