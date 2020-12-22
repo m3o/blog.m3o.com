@@ -57,7 +57,7 @@ Browse directly to [github.com/micro/services](https://github.com/micro/services
 
 ### What's Included?
 
-We're including 10 services from the get-go.
+We're including 10 services from the get go.
 
 - Helloworld
 - Chat
@@ -70,24 +70,21 @@ We're including 10 services from the get-go.
 - Notes
 - Users
 
-These services are available on [https://web.m3o.com/](https://web.m3o.com/) when launching a new service.
-
+These services are available on [web.m3o.com/](https://web.m3o.com/) when launching a new service.
 <center>
-  <img src="{{ site.baseurl }}/assets/images/new-service.png" style="width: 100%; height; auto;" />
+  <img src="{{ site.baseurl }}/assets/images/new-service.png" style="width: 90%; height; auto;" />
 </center>
 
-After running a service, an instance of it gets deployed to your namespace.
-
-Once the service deploys it's endpoints can be explored and called.
+After running a service, an instance of it gets deployed to your namespace. Once the service deploys it's endpoints can be explored and called.
 
 <center>
-  <img src="{{ site.baseurl }}/assets/images/callendpoint.png" style="width: 100%; height; auto;" />
+  <img src="{{ site.baseurl }}/assets/images/callendpoint.png" style="width: 90%; height; auto;" />
 </center>
 
 All the services running can be called from Javascript easily (currently only a vanilla JS client is available, more is coming), see the embed tab.
 
 <center>
-  <img src="{{ site.baseurl }}/assets/images/microjs.png" style="width: 100%; height; auto;" />
+  <img src="{{ site.baseurl }}/assets/images/microjs.png" style="width: 90%; height; auto;" />
 </center>
 
-MicroJS handles authentication (a popup appears with a login or register options), so even endpoints requiring authentication or authorization can be called.
+Micro.js handles authentication (a popup appears with a login or register options), so even endpoints requiring authentication or authorization can be called.
