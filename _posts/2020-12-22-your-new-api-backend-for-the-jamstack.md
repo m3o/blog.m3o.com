@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	"The new backend for your jamstack"
+title:	"Your new API backend for the jamstack"
 date:	2020-12-22 10:00:00
 ---
 <br>
