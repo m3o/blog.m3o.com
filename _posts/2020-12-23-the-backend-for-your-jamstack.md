@@ -109,6 +109,9 @@ All the services running can also be called from Javascript easily (currently on
 Micro.js provides a simple way to call services running on the platform, including handling authentication using a popup for login/registration, 
 making it easy to add your micro services anywhere on the web.
 
+For those interested in a typescript implementation of login, signup, user read and token refreshing API calls, the 
+[relevant web dashboard code](https://github.com/micro/web/blob/main/src/app/user.service.ts) can be useful.
+
 ## Build Your Own
 
 While we're providing some services out of the box, Micro is an all encompassing ecosystem that includes a platform and framework for development 
@@ -118,5 +121,3 @@ in Go. We want to encourage everyone to get involved, whether it's writing servi
 ## Learn More
 
 To learn more about Micro itself head to open source website [micro.mu](https://micro.mu) or join us in [slack](https://slack.m3o.com).
-
-
