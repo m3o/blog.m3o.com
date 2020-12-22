@@ -1,7 +1,7 @@
 ---
 layout:	post
 title:	"The backend for your jamstack"
-date:	2020-12-23 10:00:00
+date:	2020-12-22 10:00:00
 ---
 <br>
 Last month we talked about a new architecture pattern, <a href="{{ site.baseurl }}/2020/11/12/netlify-for-the-frontend-micro-for-the-backend.html">Netlify for the frontend, Micro for the backend</a>. As the frontend has evolved towards being dominated by the <a href="https://jamstack.org/">Jamstack</a>, we believe the backend also requires a fundamental shift in it's design and consumption model. 
