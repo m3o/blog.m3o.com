@@ -70,18 +70,19 @@ We're including 10 services from the get go.
 - Notes
 - Users
 
-These services are available on [web.m3o.com/](https://web.m3o.com/) when launching a new service.
+All of the above services are available to explore and deploy when logged in on [web.m3o.com](https://web.m3o.com/).
 <center>
   <img src="{{ site.baseurl }}/assets/images/new-service.png" style="width: 90%; height; auto;" />
 </center>
 
-After running a service, an instance of it gets deployed to your namespace. Once the service deploys it's endpoints can be explored and called.
+After selecting and running a service, an instance of it gets deployed to your namespace. Once the service deploys it's API endpoints can be explored and 
+called directly from the web UI along with its running status and logs.
 
 <center>
   <img src="{{ site.baseurl }}/assets/images/callendpoint.png" style="width: 90%; height; auto;" />
 </center>
-
-All the services running can be called from Javascript easily (currently only a vanilla JS client is available, more is coming), see the embed tab.
+<br>
+All the services running can be called from Javascript easily (currently only a vanilla JS client is available, more is coming), see the embed tab for the code.
 
 <center>
   <img src="{{ site.baseurl }}/assets/images/microjs.png" style="width: 90%; height; auto;" />
