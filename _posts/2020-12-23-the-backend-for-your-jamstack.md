@@ -55,25 +55,39 @@ Browse directly to [github.com/micro/services](https://github.com/micro/services
 
 <br>
 
-### What's Included?
+### Services Included
 
-We're including 10 services from the get go.
+We're including 10 services from the get go (available in [github.com/micro/services](https://github.com/micro/services)):
 
-- Helloworld
-- Chat
-- Posts
-- Comments
-- Tags
-- Feeds
-- Location
-- Messages
-- Notes
-- Users
+- **Helloworld** - The canonical helloworld to kick the tyres
+- **Chat** - Messaging as an api to embed anywhere
+- **Posts** - The foundation for a headless CMS
+- **Comments** - Add comments to posts or replies to your app
+- **Tags** - Categorise your posts for quick searching
+- **Feeds** - Crawl and index RSS feeds into your posts service
+- **Location** - Realtime gps point location tracking and search
+- **Messages** - An inbox for private messages and related
+- **Notes** - Simple todo notes, lists, etc
+- **Users** - User management and authentication
 
 All of the above services are available to explore and deploy when logged in on [web.m3o.com](https://web.m3o.com/).
+
+## Getting Started on the Web
+
+As part of this announcement we're releasing our new Web UI to quickly get up and running.
+
+Head to [m3o.com/signup](https://m3o.com/signup) to get started.
+
+### Deploy Services
+
+When logged in you can head to the [new service page](https://web.m3o.com/service/new) to explore and deploy any of the above 
+plus any other Micro services you've built yourself directly from a public git url.
+
 <center>
   <img src="{{ site.baseurl }}/assets/images/new-service.png" style="width: 90%; height; auto;" />
 </center>
+
+### Explore API Endpoints
 
 After selecting and running a service, an instance of it gets deployed to your namespace. Once the service deploys it's API endpoints can be explored and 
 called directly from the web UI along with its running status and logs.
@@ -82,10 +96,27 @@ called directly from the web UI along with its running status and logs.
   <img src="{{ site.baseurl }}/assets/images/callendpoint.png" style="width: 90%; height; auto;" />
 </center>
 <br>
-All the services running can be called from Javascript easily (currently only a vanilla JS client is available, more is coming), see the embed tab for the code.
+
+### Embed Services using Micro.JS
+
+All the services running can also be called from Javascript easily (currently only a vanilla JS client is available, more is coming), using what we call 
+**micro.js**. See the embed tab for the code. 
 
 <center>
   <img src="{{ site.baseurl }}/assets/images/microjs.png" style="width: 90%; height; auto;" />
 </center>
 <br>
-Micro.js handles authentication (a popup appears with a login or register options), so even endpoints requiring authentication or authorization can be called.
+Micro.js provides a simple way to call services running on the platform, including handling authentication using a popup for login/registration, 
+making it easy to add your micro services anywhere on the web.
+
+## Build Your Own
+
+While we're providing some services out of the box, Micro is an all encompassing ecosystem that includes a platform and framework for development 
+in Go. We want to encourage everyone to get involved, whether it's writing services for your own consumption or contributing them back to 
+[github.com/micro/services](https://github.com/micro/services) for everyone else's consumption too.
+
+## Learn More
+
+To learn more about Micro itself head to open source website [micro.mu](https://micro.mu) or join us in [slack](https://slack.m3o.com).
+
+
