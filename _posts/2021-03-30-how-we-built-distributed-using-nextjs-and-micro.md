@@ -54,7 +54,7 @@ and typescript support. For us these were mandatory feature requirements when bu
 
 // Talk about the benefits of server side rendering
 
-## API Routing with Micro
+## Micro for the Backend
 
 // Talk about using Micro APIs
 
