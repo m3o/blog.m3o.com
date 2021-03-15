@@ -46,6 +46,8 @@ and typescript support. For us these were mandatory feature requirements when bu
 
 ## Server Side Rendering
 
+// Talk about the benefits of server side rendering and API routes
+
 ## Building on Netlify
 
 We initially chose Netlify for hosting as we saw many people adopting it for Jamstack apps. Initially this proved really great for static content. As 
