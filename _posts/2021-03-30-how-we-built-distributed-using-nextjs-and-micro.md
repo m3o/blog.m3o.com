@@ -38,7 +38,13 @@ Next.js is a massively popular react based framework for Jamstack development. W
 we had the choice of going down a number of routes but what really appealed to us was the how deliberate a lot of the choices were in how the Vercel 
 team had constructed the Next.js framework.
 
-Being framework creators ourselves with the dominant framework [Go Micro](https://github.com/asim/go-micro) for Go, we could appreciate the efforts 
+<center>
+  <a href="https://nextjs.org">
+    <img src="{{ site.url }}/assets/images/nextjs.png" style="width:100%;height: auto; border: 1px solid #eee; padding: 10px;" />
+  </a>
+</center>
+<br>
+Being framework creators ourselves with the dominant framework [Go Micro](https://go-micro.dev) for Go, we could appreciate the efforts 
 required and strong opinions needed to drive such adoption and success. Vercel has done a phenomenal job in this way.
 
 Beyond praising Vercel's efforts. The Next.js framework includes a lot of key components needed for the Jamstack including server side rendering, api routes 
