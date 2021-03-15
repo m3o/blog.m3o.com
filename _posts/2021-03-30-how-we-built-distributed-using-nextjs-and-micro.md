@@ -52,7 +52,13 @@ and typescript support. For us these were mandatory feature requirements when bu
 
 ## Server Side Rendering
 
-// Talk about the benefits of server side rendering and API routes
+// Talk about the benefits of server side rendering
+
+## API Routing with Micro
+
+// Talk about using Micro APIs
+
+// Share some code snippets related to it
 
 ## Building on Netlify
 
