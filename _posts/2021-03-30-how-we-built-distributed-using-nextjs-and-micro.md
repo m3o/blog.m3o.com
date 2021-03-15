@@ -97,6 +97,37 @@ Because the APIs are colocated with the frontend we find this experience fairly 
 an ideal demonstration of the Jamstack's architecture and so we'll be working towards hosting on Vercel in the future to showcase that 
 experience.
 
+## How It All Fits Together
+
+We're running Distributed as a Next.js application on the frontend talking to Micro APIs on the backend. All of this is constructed 
+as API routes in Next.JS firing requests at our M3O platform and the various APIs we need. Let's walk through a typical request. 
+
+For example, when loading a group we need to get the group info, user profile, chats and more. We could do this as a GraphQL API
+but that would require too much stitching together in terms of the schema on the backend. Instead we're using protobuf and RPC 
+for rapid development there and Micro automagically exposes that as a HTTP/JSON API.
+
+So a typical flow is like so.
+
+1. Frontend makes a request to `/api/groups/[id]` which loads the api code in the Next.js app
+2. We validate the user is logged in by calling the `/users/Validate` endpoint and ff authenticated load the group data by id using `/groups/Read`
+3. Skipping ahead, we'll load group messages via `/threads/ListConversations` and private messages using `/chats/ListMessages`
+4. We can check for already read messages via a "seen" API and then subscribe to the streams API for instant messaging
+5. Finally we render everything based on the content loaded for the user
+
+<style>
+.gist-data { max-height: 600px; overflow: auto;}
+</style>
+
+Here's a code "snippet" for those interested. From an MVP standpoint this is just a very quick and rapid way for us to build against 
+numerous separate APIs on the backend all hosted in the same place.
+
+<script src="https://gist.github.com/asim/af104dd0e83b8c16bbb6918c8d9bab97.js"></script>
+
+For anyone interested in the "call" function. It's simply a small function we're using to call the Micro APIs on the backend. Remember 
+Micro turns any RPC based service into a HTTP/JSON API automatically via an API gateway. M3O provides hosting for all this.
+
+<script src="https://gist.github.com/asim/8293a2cb96bd768cab0d675391cde8be.js"></script>
+<br>
 ## Performance & Productivity
 
 Aside from the structural benefits of a framework like Next.js we find it really unlocks significant productivity by providing an opinionated 
