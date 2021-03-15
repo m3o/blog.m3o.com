@@ -8,9 +8,16 @@ date:   2021-03-30 10:00:00
 and [Micro](https:/micro.mu). We built it to demonstrate the value proposition of [M3O](https://m3o.com) - a cloud platform for API development. 
 This post explains what went into building Distributed in just a few weeks and how M3O helped rapidly build our MVP.
 
+<center>
+  <a href="https://joindistributed.com">
+    <img src="{{ site.url }}/assets/images/distributed.png" style="width:100%;height: auto; border: 1px solid #eee; padding: 10px;" />
+  </a>
+</center>
+<br>
 You can find the source code for distributed on [Github](https://github.com/m3o/distributed). If you want to build and host your own 
 version signup to [M3O](https://m3o.com) and start running the same services from our open source repository 
 [micro/services](https://github.com/micro/services).
+
 
 ## Jamstack Development
 
@@ -41,17 +48,56 @@ and typescript support. For us these were mandatory feature requirements when bu
 
 ## Building on Netlify
 
+We initially chose Netlify for hosting as we saw many people adopting it for Jamstack apps. Initially this proved really great for static content. As 
+our apps got more complex and we started to build out the Distributed demo we found Netlify no longer scaled with our basic needs. The first example 
+we can share is Netlify Functions for Next.js API routes.
+
+Next.js routes can be turned into Netlify Functions which are essentially hosted as AWS Lambda functions. It's a clever way of pushing certain 
+requirements to the server side, like calling third party APIs with keys you don't want to expose to the client. Next.js is great in this regard 
+and plugins like [netlify-plugin-nextjs](https://github.com/netlify/netlify-plugin-nextjs) and [next-on-netlify](https://github.com/netlify/next-on-netlify) 
+let us do this really quickly but the performance left a lot to be desired.
+
+Our APIs are primarily hosted in London on DigitalOcean and while Netlify has a CDN for static content, the Lambda functions are deployed in 
+a single region in US-East on AWS. For those who've suffered this pain you know exactly what that means. We were making cross atlantic calls 
+from JS in the client to api routes on lambda and then finally to our apis. 
+
+Needless to say this didn't scale for us. We weren't able to reach out the Netlify team to get help and so in frustration had to go down the self 
+hosted route. Note we did test out Vercel and found the experience to be faster but self hosting on DigitalOcean just made more sense for 
+our demo needs.
+
 ## Switching to Self Hosted
 
-One of the major issues we faced during our 
+One of the things DigitalOcean now provides is [App Platform](https://www.digitalocean.com/products/app-platform/), a container hosting solution 
+which lets you pick regions, does TLS certificate management for your custom domain and automatic builds from Git. This turned out to be a 
+perfect solution for self hosted Next.js apps. 
 
-// INSERT IMAGE OF CROSS ATLANTIC HOPPING
+Next.js at the end of the day is a React and node.js based application. As much as you may want to separate out the static content to something 
+like Netlify and functions on Lambda, it equally just makes sense to host the entire thing in one place and run many copies of it much like 
+we did in the old php and rails days.
 
-## Performance
+<center>
+<img src="{{ site.url }}/assets/images/do.png" style="width:100%; height: auto; border: 1px solid #eee; padding: 10px;" />
+</center>
+<br>
+Because the APIs are colocated with the frontend we find this experience fairly fast, sub 100ms for all the API calls but we know it's not 
+an ideal demonstration of the Jamstack's architecture and so we'll be working towards hosting on Vercel in the future to showcase that 
+experience.
 
-Discuss the performance of netlify functions vs DO
+## Performance & Productivity
 
-Talk about potential hosting on Vercel
+Aside from the structural benefits of a framework like Next.js we find it really unlocks significant productivity by providing an opinionated 
+approach to frontend development. That coupled with Micro on the backend and our APIs hosted on M3O it's enabled us to rapidly ship this 
+MVP within the space of 4-6 weeks with mostly 1 person doing the work. 
+
+That really speaks to the power of the combination of Next.js and Micro. For this demo we built APIs for user management, group messaging, 
+websocket streaming, sending invite emails and audio/video through Twilio WebRTC. One can only imagine where it would go with a dedicated 
+team and full product focus.
+
+On the performance side, Next.js is blazingly fast by all measures. Whether it be the local reload for development or the server side rendering. 
+It all adds to a really snappy experience on both the development and consumption side of things. With the backend we tried to pair this 
+with Go based APIs written with Micro to ensure not just speed of development but also speed of delivery.
+
+All in all, we think Next.js and Micro are the perfect pairing for any Jamstack and API based development.
 
 ## Conclusions
 
