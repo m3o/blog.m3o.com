@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How we built Distributed with Next.js and Micro"
-date:   2021-03-30 10:00:00
+date:   2021-03-16 10:00:00
 ---
 <br>
 [Distributed](https://joindistributed.com) is a live social chat app built as a Jamstack demo using [Next.js](https://nextjs.org/)
