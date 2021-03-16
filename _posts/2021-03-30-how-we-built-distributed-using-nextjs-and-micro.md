@@ -52,9 +52,19 @@ and typescript support. For us these were mandatory feature requirements when bu
 
 ## Micro for the Backend
 
-// Talk about using Micro APIs
+[Micro](https://micro.mu) is an open source cloud platform for API development. With modern day complexity in writing software for the cloud, 
+Micro has attempted to distill that down to a handful of primitives and a framework for building services in Go.
 
-// Share some code snippets related to it
+<center>
+  <img src="https://micro.mu/images/micro-3.0.png" style="width:100%;height: auto;" />
+</center>
+<br>
+
+Micro took learnings from the original Go Micro framework and focused on not just gRPC based service development but actually packaging together a runtime 
+and platform which exposes those services automatically as APIs. What this means is we can write microservices on the backend using gRPC and protobuf and 
+immediately provide value to consumers and clients on the frontend via HTTP/JSON.
+
+To learn more about that check out the project at [micro.mu](https://micro.mu) or the hosted platform at [m3o.com](https://m3o.com).
 
 ## Building on Netlify
 
