@@ -5,7 +5,7 @@ date:   2021-03-16 10:00:00
 ---
 <br>
 [Distributed](https://distributed.app) is a live social chat app built as a Jamstack demo using [Next.js](https://nextjs.org/)
-and [Micro](https:/micro.mu). We built it to demonstrate the value proposition of [M3O](https://m3o.com) - a cloud platform for API development. 
+and [Micro](https://micro.mu). We built it to demonstrate the value proposition of [M3O](https://m3o.com) - a cloud platform for API development. 
 This post explains what went into building Distributed in just a few weeks and how M3O helped rapidly build our MVP.
 
 <center>
