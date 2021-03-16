@@ -152,7 +152,7 @@ All in all, we think Next.js and Micro are the perfect pairing for any Jamstack 
 
 ## Conclusions
 
-Thanks for reading this post on how we built [Distributed](https://joindistributed.com) on the Jamstack using [Next.js](https://nextjs.org/)
+Thanks for reading this post on how we built [Distributed](https://distributed.app) on the Jamstack using [Next.js](https://nextjs.org/)
 and [Micro](https:/micro.mu). Find the source code for distributed on [Github](https://github.com/m3o/distributed). If you want to build and host your own 
 version signup to [M3O](https://m3o.com) and start running the same services from our open source repository 
 [micro/services](https://github.com/micro/services).
