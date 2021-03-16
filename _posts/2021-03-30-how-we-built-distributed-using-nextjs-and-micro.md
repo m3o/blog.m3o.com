@@ -50,10 +50,6 @@ required and strong opinions needed to drive such adoption and success. Vercel h
 Beyond praising Vercel's efforts. The Next.js framework includes a lot of key components needed for the Jamstack including server side rendering, api routes 
 and typescript support. For us these were mandatory feature requirements when building against not only our APIs but third party providers. 
 
-## Server Side Rendering
-
-// Talk about the benefits of server side rendering
-
 ## Micro for the Backend
 
 // Talk about using Micro APIs
