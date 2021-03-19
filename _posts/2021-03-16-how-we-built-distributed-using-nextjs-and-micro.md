@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How we built Distributed with Next.js and Micro"
+title:  "Why and how we built Distributed with Next.js and Micro"
 date:   2021-03-16 10:00:00
 ---
 <br>
@@ -18,6 +18,18 @@ You can find the source code for distributed on [Github](https://github.com/m3o/
 version signup to [M3O](https://m3o.com) and start running the same services from our open source repository 
 [micro/services](https://github.com/micro/services).
 
+## Why we built Distributed
+
+Distributed was built as a jamstack demo to show how you could leverage [M3O](https://m3o.com) as an API backend for rapid MVP 
+development. M3O itself is a cloud platform for API development, built on the popular open source project [Micro](https://micro.mu). 
+Micro enables you to quickly build APIs in Go on the backend and M3O provides simple free hosting of those services.
+
+We wanted to show the Jamstack audience how you could quickly leverage those APIs to build something on the frontend. Not only that, 
+we really wanted to understand and experience the frontend developers perspective through dogfooding of our own APIs rather than just 
+throwing stuff over the wall and hoping it works.
+
+Hopefully in that we we've done is demonstrate the value of our platform and how others can also make use of it with a real world 
+app like Distributed to learn from. Let's talk more about Jamstack now.
 
 ## Jamstack Development
 
