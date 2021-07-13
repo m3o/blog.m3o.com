@@ -13,7 +13,7 @@ Today we’re excited to announce our new [Micro API](https://m3o.com) cloud pla
 <br>
 ## API building blocks
 
-Micro has evolved from an open source framework to a full blown API platform, one that’s continues to focus on the developer experience first and foremost. The majority of our users are building APIs for end public consumption but having to rebuild many of the building blocks they need wherever they go.
+Micro has evolved from an open source framework to a full blown API platform, one that continues to focus on the developer experience first and foremost. The majority of our users are building APIs for end public consumption but having to rebuild many of the building blocks they need wherever they go.
 
 We wanted to solve that problem by providing a set of programmable building block services as simple APIs for public consumption from anywhere in the world, all in one place.
 
