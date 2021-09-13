@@ -71,8 +71,8 @@ This will load location data for the user's IP address in to the group. We can a
 
 Now the final step is to use this location as the input to our weather forecast. Click on the `Repeating Group` and let's update the data source. To convert our location retrieved from the API to an address for the weather forecast we use the `Calculate formula` facility in Bubble. Click on the `Repeating Group`'s data source and under location choose `Insert dynamic data` -> `Calculate formula` -> 
 - Type - `Coordinates to Address`
-- latitude - `Group Lookup (Micro IP)` -> `Lookup (Micro IP0)` -> `latitude`
-- longitude - `Group Lookup (Micro IP)` -> `Lookup (Micro IP0)` -> `longitude`
+- latitude - `Group Lookup (Micro IP)` -> `Lookup (Micro IP)` -> `latitude`
+- longitude - `Group Lookup (Micro IP)` -> `Lookup (Micro IP)` -> `longitude`
 
 ![Updated settings for repeating group using the location from the IP API](/assets/images/2021-09-10/ip-location-weather.jpg)
 
