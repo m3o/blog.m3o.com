@@ -1,0 +1,3 @@
+# Blog
+
+The company blog
