@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "M3O - An open source AWS alternative"
+title:  "M3O - An open source public cloud platform"
 date:   2021-10-20 10:00:00
 ---
 <br>
