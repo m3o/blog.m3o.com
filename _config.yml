@@ -1,8 +1,7 @@
-name: Micro
+name: M3O
 company_name: Micro Services, Inc
-description: Micro is a platform for API driven services development
-meta_description: "The fastest way to build, share and collaborate on services in the Cloud and beyond"
-
+description: M3O is an open source public cloud platform
+meta_description: "M3O is an open source public cloud platform. An AWS alternative for the next generation of developers."
 markdown: kramdown
 highlighter: pygments
 logo: false
