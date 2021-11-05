@@ -75,8 +75,8 @@ It's up to developers to build the future and with it decide the kinds of platfo
 in open platforms. Not just in the case of Web3 but more so in regards to "open source eating everything". It's not enough that just the services 
 you run are open source, the entire system also needs to be so.
 
-AWS built in an era before GitHub and the explosive nature of open source, is not. AWS is a silo, and a ship filled filled with containers of 
-teams all building APIs in isolation. Their control plan is not open source, their platform is not open source, their system is not open source. 
+AWS built in an era before GitHub and the explosive nature of open source, is not. AWS is a silo, and a ship filled with containers of 
+teams all building APIs in isolation. Their control plane is not open source, their platform is not open source, their system is not open source. 
 AWS is not open source.
 
 We are a generation of developers who are looking for a new platform, one that aligns with our goals, beliefs and mantras and one that is entirely 
