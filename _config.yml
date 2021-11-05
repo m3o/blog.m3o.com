@@ -1,6 +1,6 @@
 name: M3O
 company_name: Micro Services, Inc
-description: M3O is an open source public cloud platform
+description: The open source public cloud platform
 meta_description: "M3O is an open source public cloud platform. An AWS alternative for the next generation of developers."
 markdown: kramdown
 highlighter: pygments
