@@ -25,19 +25,19 @@ Jamstack architectures powered by the Netlify's and Vercel's of the world.
 
 AWS now leaves a lot to be desired for the next generation of devs. Can they do anything to fix that?
 
-I personally don't think so.
+We personally don't believe so.
 
 ## Who is AWS for?
 
 Then if AWS isn't built for developers, who's it for? AWS was never built for developers in the first place, let's be clear about that. AWS was about provisioning 
-infrastructure services on which we could then run our software which was still automated by the sysadmins in our companies. How do I know that? Because I was 
-one of those sysadmins.
+infrastructure services on which we could then run our software which was still automated by the sysadmins in our companies. How do we know that? Because we were 
+heavily invested in AWS in our prior companies.
 
-I contended with the complexity of the bare metal era before AWS and then what came after managed largely by a disarray of hand crafted bash scripts, python libraries and 
-eventually configuration management tools like chef and puppet. I escaped just as the DevOps movement took off but continued to witness the extraordinary pains of 
+We contended with the complexity of the bare metal era before AWS and then what came after managed largely by a disarray of hand crafted bash scripts, python libraries and 
+eventually configuration management tools like chef and puppet. We escaped just as the DevOps movement took off but continued to witness the extraordinary pains of 
 building systems for the cloud as a software engineer.
 
-Yet in all that time, I never once saw developers personally touch CloudFormation, or swim the sea of endless complexity unless they truly had to. No, those 
+Yet in all that time, we never once saw developers personally touch CloudFormation, or swim the sea of endless complexity unless they truly had to. No, those 
 developers would gladly choose a Heroku long before an AWS, but if you worked at a startup that was scaling, at some point in the lifetime of the company 
 you could expect an infrastructure engineer to join and quickly replatform you to AWS.
 
@@ -71,7 +71,20 @@ what developers need and provide the next level building blocks for new types of
 The world is no longer talking about building mobile apps or web services but instead, crypto networks and the metaverse. Your grandparents can barely 
 use a mobile phone, are we really expecting AWS and others to help us build the metaverse? 
 
-It's up to developers to build the future and with it decide the kinds of platforms we want to build on.
+It's up to developers to build the future and with it decide the kinds of platforms we want to build on. We're now more than ever interested 
+in open platforms. Not just in the case of Web3 but more so in regards to "open source eating everything". It's not enough that just the services 
+you run are open source, the entire system also needs to be so.
 
-I'm Asim Aslam, the founder of Micro, and we're building [M3O](https://m3o.com), a new public cloud platform, an AWS alternative for the next 
+AWS built in an era before GitHub and the explosive nature of open source, is not. AWS is a silo, and a ship filled filled with containers of 
+teams all building APIs in isolation. Their control plan is not open source, their platform is not open source, their system is not open source. 
+AWS is not open source.
+
+We are a generation of developers who are looking for a new platform, one that aligns with our goals, beliefs and mantras and one that is entirely 
+based on open source software.
+
+I'm Asim Aslam, the founder of Micro, and we're building [M3O](https://m3o.com), a new open source public cloud platform, an AWS alternative for the next 
 generation of developers. Come join me in deciding how, where and what we're going to build the future on.
+
+<center>
+See the source on <a href="https://github.com/m3o/m3o">GitHub</a>.
+</center>
