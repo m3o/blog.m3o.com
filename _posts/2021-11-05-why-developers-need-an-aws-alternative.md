@@ -2,6 +2,7 @@
 layout: post
 title:  "Why developers need an AWS alternative"
 date:   2021-11-05 10:00:00
+image: "/assets/images/xaas.jpg"
 ---
 <br>
 <center>
