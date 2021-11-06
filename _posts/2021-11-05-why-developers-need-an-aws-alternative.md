@@ -17,7 +17,7 @@ access to compute, storage and infrastructure services. What previously might ha
 in a way that had not yet been imagined and enabled developers to quickly scale web services as users were coming online.
 
 Yet for all it's worth, AWS has largely maintained this experience and failed to keep up with modern day needs of developers. In 2006, we expected a level of server 
-and database managed as developers. What we classified as sysadmins (not yet devops) was a skill we'd gladly learn if it meant being able to ship the next shiny 
+and database management as developers. What we classified as sysadmins (not yet devops) was a skill we'd gladly learn if it meant being able to ship the next shiny 
 Rails app. 
 
 Today we're looking for more. We're looking for not just fully managed (which AWS attempts to convince us they are), but an entirely serverless experience. We don't 
