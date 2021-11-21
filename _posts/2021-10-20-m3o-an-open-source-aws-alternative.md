@@ -3,12 +3,9 @@ layout: post
 title:  "M3O - An open source AWS alternative"
 date:   2021-10-20 10:00:00
 ---
-<br>
-
 <p align="center">
 	<a href="http://m3o.com">
-		<img src="https://avatars.githubusercontent.com/u/65984637?s=200&v=4" />
-		<h1 align="center">M3O</h1>
+		<img src="https://raw.githubusercontent.com/m3o/m3o/main/images/m3o.png" />
 	</a>
 </p>
 <p align="center">M3O is an open source public cloud platform.<br>We are building an AWS alternative for the next generation of developers.</p>
