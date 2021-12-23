@@ -34,7 +34,7 @@ curl "https://api.m3o.com/v1/app/Run" \
 ### Custom URLs
 
 What's more, on most platforms the URLs are often something really messy unless you provide a custom domain. We wanted
-something simple be default. Each app gets a custom `*.m3o.app` domain which you can either reserve or get something 
+something simple by default. Each app gets a custom `*.m3o.app` domain which you can either reserve or get something 
 pregenerated much like usernames on social platforms.
 
 Helloworld lives at [helloworld.m3o.app](https://helloworld.m3o.app).
