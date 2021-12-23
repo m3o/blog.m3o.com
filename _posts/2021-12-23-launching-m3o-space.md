@@ -25,7 +25,11 @@ curl "https://api.m3o.com/v1/space/Create" \
     -Fobject=@file.jpg -Fname=images/file.jpg -Fvisibility=public
 ```
 
-A url will then be return like `https://space.m3ocontent.com/micro/3db66283-55b5-4e6e-9c83-de9e53959db0/images/file.jpg`
+A url will then be returned like so:
+
+```
+https://space.m3ocontent.com/micro/3db66283-55b5-4e6e-9c83-de9e53959db0/images/file.jpg
+```
 
 ## Read the Object
 
