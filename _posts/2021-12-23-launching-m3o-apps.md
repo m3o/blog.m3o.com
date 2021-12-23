@@ -11,7 +11,7 @@ To get started just head to [M3O](https://m3o.com), signup and check out the [Ap
 ## Apps API
 
 Apps are central to all that we do. It's the main way we've come to consume services, and there's no limit to the number 
-of App deployment platforms we have. DigitalOcean, Heroku, AWS, Render, the list goes on and one. Yet for us it still 
+of App deployment platforms we have. DigitalOcean, Heroku, AWS, Render, the list goes on and on. Yet for us it still 
 felt like app deployment was really something falling short, either being super opinionated and entirely restricted 
 or incredibly complex and difficult to use from an API.
 
