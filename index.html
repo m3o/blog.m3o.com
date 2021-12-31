@@ -46,16 +46,21 @@ pagination:
 </style>
 <header style="margin-top: 25px; margin-bottom: 100px; padding-top: 25px;">
   <span class="title">
-    <a href="/" style="text-decoration: none;" class="bold">
-	{{ site.name }}
-    </a>
+            <a class="navbar-brand logo text" href="/" style="height: 60px; width: 60px; display: inline-block; vertical-align: top;">
+                <svg fill="none" viewBox="0 0 46 30">
+                <g fill="#000">
+                <path d="m13.633 17.141 1.77-3.708v6.474h1.947v-10.3h-1.96l-2.532 5.297-2.532-5.297h-1.962v10.3h1.946v-6.474l1.771 3.708zm11.403-.118c0 .81-.541 1.28-1.375 1.28-.864 0-1.45-.53-1.508-1.324v-.015h-1.917v.015c.146 1.869 1.375 3.076 3.41 3.076 2.064 0 3.322-1.104 3.322-2.929 0-.81-.41-1.898-1.083-2.325.747-.53 1.083-1.412 1.083-2.178 0-1.765-1.258-3.163-3.366-3.163-2.034 0-3.22 1.206-3.366 3.075v.015h1.917v-.015c.059-.794.585-1.324 1.449-1.324.922 0 1.434.588 1.434 1.486 0 .765-.57 1.207-1.507 1.207h-.85v1.75h.85c.893 0 1.507.53 1.507 1.37zm12.428-.78v-2.972c0-2.28-1.405-3.811-3.864-3.811s-3.864 1.53-3.864 3.81v2.973c0 2.281 1.405 3.812 3.864 3.812 2.46 0 3.864-1.53 3.864-3.812zm-1.961 0c0 1.192-.834 1.855-1.903 1.855-1.068 0-1.902-.663-1.902-1.855v-2.972c0-1.192.834-1.854 1.902-1.854 1.069 0 1.903.662 1.903 1.854z"/>
+                <path clip-rule="evenodd" d="m43.91 2.102h-41.82v25.226h41.82zm-43.91-2.102v29.43h46v-29.43z" fill-rule="evenodd"/>
+                </g>
+                </svg>
+            </a>
   </span>
 </header>
 
 <main id="content" class="content" role="main">
     <div class="post">
-      <h1 class="post-header">Blog</h1>
-      <h5 class="post-header desc">{% if site.description %} {{ site.description }} {% endif %}</h2>
+      <h2 class="post-header">Blog</h2>
+      <h5 class="post-header desc">{% if site.description %} {{ site.description }} {% endif %}</h5>
     </div>
 
     <div class="extra-pagination inner">
